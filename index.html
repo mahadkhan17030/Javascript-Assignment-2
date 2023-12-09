@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 14 Assignment</title>
+</head>
+
+<body>
+    <h1>JAVASCRIPT</h1>
+    <script>
+        // Chapter 1
+        alert("Welcome to the world of coding.")
+
+        // chapter 2
+        var name = "Mahad"
+        console.log(name)
+        name = "Muzammil"
+        console.log(name)
+        alert(name)
+
+        // chapter 3
+        var num = 25
+        var newNum = num + 20
+        console.log(num)
+        console.log(newNum)
+        newNum = newNum + 40
+        console.log(newNum)
+
+        // chapter 4
+        // IllEGAL VARIABLES
+        // var first Name = 
+        // var 1stname = 
+        // var _name = 
+        // var firstname =   (WRITE IN CAMELCASE)
+
+        // LEGAL VARIABLES
+        // var name = 
+        // var first_name=
+        // var $name=
+
+        // Chapter 5
+        var a = 6
+        var b = a * 5
+        var c = 87 / b
+        var d = a + b(c + b) * 5
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        console.log(d)
+
+        // Chapter 6
+
+        var e = 2
+        var f = e++
+        var g = ++f
+        var h = e++ + ++f + --e
+        consoe.log(e)
+        consoe.log(f)
+        consoe.log(g)
+        consoe.log(h)
+
+        // Chapter 7
+        var i = 35 + 67 - 43 * 35 / 8
+        // (BY BEDMAS RULE)
+        console.log(i)
+
+        // Chapter 8
+        var j = "Thanks"
+        var k = "input"
+        console.log(j + " For Your " + k + " !")
+
+        // Chapter 9
+        var userName = prompt("What is your name?", "MAHAD")
+        console.log(userName)
+
+        // Chapter 10
+        // == for value check   &  === for value and type check
+        var age = prompt("Enter your age.")
+        age = Number(age)
+        if (age >= 18) {
+            Console.log("You are adult.")
+        } else {
+            console.log("You are under age.")
+        }
+
+        // chapter 11
+        var ticketNum = prompt("Enter your ticket num upto 4 places.")
+        var ticket = Number(ticketNum)
+        if (ticketNum !== 12345) {
+            console.log("You are allowed")
+        } else {
+            console.log("You are not allowed.")
+        }
+
+        // Chapter 12
+        var age1 = prompt("Enter your age.")
+        var studentCard = prompt("Do you have student card. Yes or No")
+        age = Number(age1)
+        if (age1 >= 18) {
+            Console.log("You are adult.")
+        } else if (studentCard = "yes") {
+            console.log("You are allowed")
+        } else {
+            console.log("You are not allowed")
+        }
+
+        // Chapter 13
+        var weight = 260
+        var time = 5
+        var age = 17
+        var gender = "male"
+        if (weight > 300 && time < 6 && age > 17 && gender === "male") {
+            alert("Come to our tryout!");
+        }
+        else {
+            alert("Come to our cookout!");
+        }
+        var SAT = 3.5
+        var avg = 5
+        var GPA = 3.9
+        var sport = 'Cricket'
+        if (SAT > avg || GPA > 2.5 || sport === "football") {
+            alert("Welcome to Bubba State!");
+        }
+        else {
+            alert("Have you looked into appliance repair?");
+        }
+
+        // Chapter 14
+
+        var want = prompt("What do you want? :fruit, vegetables or meat")
+        if (want == "fruit") {
+            var name = prompt("which fruit? : apple, mango, grapes, water melon or peach")
+            if (name == "apple" || name == "mango" || name == "grapes" || name == "water melon" || name == "peach") { var price = prompt("Your fixed price for 1 kg is Rs.100.") } else { alert("Sorry we don't have it") }
+            if (price == "100") { var kgs = prompt("How many kgs do you want?") } else { alert("Please enter the right price") }
+            if (kgs == "num") { var thanks = alert("Thanks for buying.") } else { alert("please enter the number of kgs") }
+        }
+
+        else if (want == "meat") {
+            var meat = prompt("which meat: beef, mutton or chicken")
+            if (meat == "chicken" || meat == "beef" || meat == "mutton") { var price = prompt("Your fixed price for 1 kg is Rs.500.") } else { ("Sorry we don't have it") }
+            if (price == "500") { var kgs = prompt("How many kgs do you want.") } else { ("Please enter the right price") }
+            if (kgs == "num") { var thanks = alert("Thanks for buying") }
+        }
+
+        else if (want == "vegetables") {
+            var name = prompt("Which vegetables: brinjal, peas, cucumber, bittergourd or potato")
+            if (name == "brinjal" || name == "peas" || name == "cucumber" || name == "bittergourd" || name == "potato") { var price = prompt("Your fixed price for 1 kg is Rs.90.") } else { ("Sorry we don't have it") }
+            if (price == "90") { var kgs = prompt("How many kgs do you want?") } else { ("Please enter the right price") }
+            if (kgs == "num") { var thanks = alert("Thanks for buing") }
+        } else { alert("sorry we don't have it") }
+
+// Chapter 15
+var names=["ibrahim","imran","khalil"]
+console.log(names)
+console.log(names[0])
+console.log(names[1])
+console.log(names[2])
+
+// Chapter 16
+var names=["ibrahim","imran","khalil"]
+console.log(names)
+names[0]='Mahad'
+names[1]="Muzammil"
+console.log(names)
+names.pop()
+console.log(names)
+names.push("Mudassir")
+console.log(names)
+
+
+// Chapter 17
+var persons=["muhammad",'khalil',"ibrahim",'farooq']
+console.log(persons)
+persons.shift()
+console.log(persons)
+persons.unshift("Mudassir")
+console.log(persons)
+var friend=persons.slice(0,3)
+console.log(friend)
+var friends=persons.splice(2,2,"MAAZ")
+console.log(friends)
+console.log(persons)
+
+
+    </script>
+</body>
+
+</html>
